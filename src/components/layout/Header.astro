@@ -3,6 +3,8 @@ import ThemeToggle from "../ThemeToggle.astro";
 import Search from "../Search.astro";
 import { menuLinks } from "@/site-config";
 
+import { Icon } from "astro-icon/components";
+
 const url = new URL(Astro.request.url);
 ---
 
@@ -65,7 +67,7 @@ const url = new URL(Astro.request.url);
 			aria-expanded="false"
 			aria-haspopup="menu"
 		>
-			<svg
+			<!-- <svg
 				id="line-svg"
 				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
 				aria-hidden="true"
@@ -90,9 +92,18 @@ const url = new URL(Astro.request.url);
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-			>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-			</svg>
+			> -->
+			<Icon
+				id="line-svg"
+				name="tabler:menu"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
+			/>
+			<Icon
+				id="cross-svg"
+				name="tabler:x"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
+			/>
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
 		</button>
 	</mobile-button>
 </header>

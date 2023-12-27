@@ -16,7 +16,7 @@
 		"@astrojs/rss": "4.0.1",
 		"@astrojs/sitemap": "3.0.3",
 		"@astrojs/tailwind": "5.0.3",
-		"@iconify-json/mdi": "^1.1.63",
+		"@iconify-json/tabler": "^1.1.102",
 		"astro": "4.0.3",
 		"astro-icon": "^1.0.0",
 		"rehype-external-links": "^3.0.0",
