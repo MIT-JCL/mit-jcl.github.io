@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "MIT Jews for Ceasefire",
+	"short_name": "MIT_J4C",
+	"description": "Website for MIT Jews for Ceasefire",
 	"icons": [
 		{
 			"src": "/192x192.png",

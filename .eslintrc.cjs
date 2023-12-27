@@ -21,6 +21,12 @@ module.exports = {
 			"warn",
 			{ varsIgnorePattern: "Props", ignoreRestSiblings: true },
 		],
+		"prettier/prettier": [
+			"error",
+			{
+				endOfLine: "auto",
+			},
+		],
 	},
 	overrides: [
 		{
