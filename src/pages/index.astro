@@ -8,7 +8,25 @@ const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-const partnerOrgs: Array<{ title: string; desc: string; href: string }> = []; // TODO: ADD ORGS HERE
+const partnerOrgs: Array<{ title: string; desc?: string; href: string }> = [
+	{ title: "MIT Coalition Against Apartheid", desc: "", href: "https://caa.mit.edu/" },
+	{ title: "Palestine @ MIT", desc: "", href: "http://palestine.mit.edu/" },
+	{ title: "MIT Black Students Union", desc: "", href: "http://bsu.scripts.mit.edu/wp/" },
+	{ title: "MIT Black Graduate Students Association", desc: "", href: "https://bgsa.mit.edu/" },
+	{ title: "MIT Asian American Initiative", desc: "", href: "http://asianamerican.mit.edu/" },
+	{ title: "MIT Arab Student Organization", desc: "", href: "https://asomit.squarespace.com/" },
+	{ title: "MIT Divest", desc: "", href: "https://www.mit-divest.com/" },
+	{
+		title: "MIT Reading for Revolution",
+		desc: "",
+		href: "https://engage.mit.edu/readingforrevolution/home/",
+	},
+	{
+		title: "MIT Student Workers Alliance",
+		desc: "",
+		href: "https://www.instagram.com/mitswalliance/",
+	},
+]; // TODO: ADD ORGS HERE
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -42,11 +60,16 @@ const partnerOrgs: Array<{ title: string; desc: string; href: string }> = []; //
 							href={href}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="cactus-link inline-block"
+							class="cactus-link inline-block sm:mt-2"
 						>
 							{title}
 						</a>
-						:<p class="inline-block sm:mt-2">{desc}</p>
+						{desc && (
+							<>
+								<span>-</span>
+								<p class="inline-block sm:mt-2">{desc}</p>
+							</>
+						)}
 					</li>
 				))
 			}
