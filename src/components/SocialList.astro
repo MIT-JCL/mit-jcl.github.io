@@ -20,7 +20,6 @@ const socialLinks: Array<{
 		name: "mdi:twitter",
 		friendlyName: "Twitter",
 		link: "https://twitter.com/mitj4c",
-		isWebmention: true,
 	},
 	{
 		name: "mdi:github",
@@ -31,13 +30,13 @@ const socialLinks: Array<{
 		name: "mdi:email",
 		friendlyName: "email",
 		link: "mailto:jew4ceasefire@mit.edu",
-		// isWebmention: true,
+		isWebmention: true,
 	},
 ];
 ---
 
 <div class="flex flex-wrap items-end gap-x-4">
-	<p>Find me on</p>
+	<p>Find us on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ link, name, friendlyName, isWebmention }) => (
