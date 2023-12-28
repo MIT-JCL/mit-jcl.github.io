@@ -3,8 +3,10 @@ import ThemeToggle from "../ThemeToggle.astro";
 import Search from "../Search.astro";
 import { menuLinks } from "@/site-config";
 
-import { Image } from "astro:assets";
-import logo from "@/assets/j4c_logo.png";
+// import { Image } from "astro:assets";
+// import logo from "@/assets/j4c_logo.png";
+
+import logoSvg from "/icon.svg?raw";
 
 import { Icon } from "astro-icon/components";
 
@@ -18,11 +20,9 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<Image
-				src={logo}
-				class="aspect-[1181/1001] me-3 h-6 w-auto sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-14"
-				alt="MIT J4C Logo"
-			/>
+			<div class="me-3 h-6 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-14 sm:w-14">
+				<Fragment set:html={logoSvg} />
+			</div>
 			<span class="text-xl font-bold sm:text-2xl">MIT Jews for Ceasefire</span>
 		</a>
 		<nav
@@ -68,31 +68,31 @@ const url = new URL(Astro.request.url);
 			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
 		</button>
 	</mobile-button>
-</header>
 
-<script>
-	import { toggleClass } from "@/utils";
+	<script>
+		import { toggleClass } from "@/utils";
 
-	class MobileNavBtn extends HTMLElement {
-		private headerEl: HTMLElement;
-		private mobileButtonEl: HTMLButtonElement;
-		private menuOpen: boolean;
+		class MobileNavBtn extends HTMLElement {
+			private headerEl: HTMLElement;
+			private mobileButtonEl: HTMLButtonElement;
+			private menuOpen: boolean;
 
-		constructor() {
-			super();
-			this.headerEl = document.getElementById("main-header")!;
-			this.mobileButtonEl = this.querySelector("button") as HTMLButtonElement;
-			this.menuOpen = false;
+			constructor() {
+				super();
+				this.headerEl = document.getElementById("main-header")!;
+				this.mobileButtonEl = this.querySelector("button") as HTMLButtonElement;
+				this.menuOpen = false;
 
-			this.mobileButtonEl.addEventListener("click", this.toggleMobileMenu);
+				this.mobileButtonEl.addEventListener("click", this.toggleMobileMenu);
+			}
+
+			toggleMobileMenu = () => {
+				toggleClass(this.headerEl, "menu-open");
+				this.menuOpen = !this.menuOpen;
+				this.mobileButtonEl.setAttribute("aria-expanded", this.menuOpen.toString());
+			};
 		}
 
-		toggleMobileMenu = () => {
-			toggleClass(this.headerEl, "menu-open");
-			this.menuOpen = !this.menuOpen;
-			this.mobileButtonEl.setAttribute("aria-expanded", this.menuOpen.toString());
-		};
-	}
-
-	customElements.define("mobile-button", MobileNavBtn);
-</script>
+		customElements.define("mobile-button", MobileNavBtn);
+	</script>
+</header>
