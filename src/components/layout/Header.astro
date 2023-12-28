@@ -20,6 +20,13 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
+			<!-- <Image
+				src={logo}
+				class="aspect-[1181/1001] me-3 h-6 w-auto sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-14"
+				widths={[28, 66, logo.width]}
+				sizes="(max-width: 640px) 28px, 66px, 1181px"
+				alt="MIT J4C Logo"
+			/> -->
 			<div class="me-3 h-7 w-7 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-16 sm:w-16">
 				<Fragment set:html={logoSvg} />
 			</div>
