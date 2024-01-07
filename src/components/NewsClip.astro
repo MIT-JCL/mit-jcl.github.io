@@ -1,5 +1,14 @@
 ---
 import FormattedDate from "./FormattedDate.astro";
+
+interface Props {
+	link: string;
+	title: string;
+	description?: string;
+	pubDate: Date;
+	journal: string;
+}
+
 const { link, title, description, pubDate, journal } = Astro.props;
 ---
 
@@ -11,4 +20,4 @@ const { link, title, description, pubDate, journal } = Astro.props;
 	</a>
 </div>
 
-<q class="line-clamp-3 block italic">{description}</q>
+{description && <q class="line-clamp-3 block italic">{description}</q>}
