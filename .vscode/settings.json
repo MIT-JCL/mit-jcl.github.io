@@ -14,10 +14,10 @@
 		"typescript", // Enable .ts
 		"typescriptreact"
 	],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "editor.quickSuggestions": {
-    "strings": "on"
-  }
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.quickSuggestions": {
+		"strings": "on"
+	}
 }
