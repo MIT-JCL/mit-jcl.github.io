@@ -1,0 +1,14 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+const { link, title, description, pubDate, journal } = Astro.props;
+---
+
+<FormattedDate date={pubDate} class="min-w-[120px] text-gray-600 dark:text-gray-400" />
+<i>{journal}</i>
+<div style="flex-basis: 100%">
+	<a href={link} class="cactus-link">
+		{title}
+	</a>
+</div>
+
+<q class="line-clamp-3 block italic">{description}</q>

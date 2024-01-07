@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@/layouts/Base";
+import NewsClip from "@/components/NewsClip";
 
 const meta = {
 	title: "Media",
@@ -13,37 +14,34 @@ const meta = {
 		<p>View publications and other places you can find our words!</p>
 
 		<h2 class="title mb-4 text-xl">News Outlets</h2>
-		<ul class="list-inside list-disc">
-			<li>
-				The Nation: <a
-					class="cactus-link inline-block"
-					href="https://www.thenation.com/article/activism/university-protests-antisemitism-islamophobia/"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="interest form"
-					>College Administrations Are Failing Their Palestinian and Jewish Students</a
-				>
+		<ul class="space-y-8">
+			<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
+				<NewsClip
+					link="https://www.thenation.com/article/activism/university-protests-antisemitism-islamophobia"
+					title="College Administrations Are Failing Their Palestinian and Jewish Students"
+					description="An article on how universities including MIT have shut down protests and conflated anti-zionism with anti-semitism."
+					pubDate={new Date("12 Oct 2023")}
+					journal="The Nation"
+				/>
 			</li>
-			<li>
-				Chronicle for Higher Ed: <a
-					class="cactus-link inline-block"
-					href="https://www-chronicle-com.libproxy.mit.edu/article/at-mit-fear-frustration-and-flailing-administrators"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="interest form">At MIT, Fear, Frustration, and Flailing Administrators</a
-				>
+			<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
+				<NewsClip
+					link="https://www-chronicle-com.libproxy.mit.edu/article/at-mit-fear-frustration-and-flailing-administrators"
+					title="At MIT, Fear, Frustration, and Flailing Administrators"
+					description="An article detailing the events of the November 9th sit-in at MIT, and the administration's response."
+					pubDate={new Date("22 Nov 2023")}
+					journal="Chronicle for Higher Ed"
+				/>
 			</li>
-			<li>
-				Teen Vogue: <a
-					class="cactus-link inline-block"
-					href="https://www.teenvogue.com/story/congressional-hearing-antisemitism-oped"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="interest form">Do American Colleges Have an Antisemitism Problem?</a
-				>
+			<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
+				<NewsClip
+					link="https://www.teenvogue.com/story/congressional-hearing-antisemitism-oped"
+					description="An op-ed concerned the congressional hearing purporting to discuss anti-semitism at colleges including MIT."
+					pubDate={new Date("22 Dec 2023")}
+					journal="Teen Vogue"
+				/>
 			</li>
 		</ul>
-
 		<h2 class="title mb-4 text-xl">US Government</h2>
 		<ul class="list-inside list-disc">
 			<li>
