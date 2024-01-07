@@ -4,7 +4,7 @@ import FormattedDate from "./FormattedDate.astro";
 interface Props {
 	link: string;
 	title: string;
-	description?: string;
+	description?: string | undefined;
 	pubDate: Date;
 	journal: string;
 }
