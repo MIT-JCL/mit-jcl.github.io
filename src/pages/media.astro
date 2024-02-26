@@ -1,14 +1,21 @@
 ---
 import PageLayout from "@/layouts/Base";
 import NewsClip from "@/components/NewsClip";
-import type { ComponentProps } from "astro/types";
+//import type { ComponentProps } from "astro/types";
 
 const meta = {
 	title: "Media",
 	description: "A list of media references where you can find out works",
 };
+interface NewsClipProps {
+	link: string;
+	title: string;
+	description?: string;
+	pubDate: Date;
+	journal: string;
+}
 
-const newsArticles: { articleType: string; articleList: ComponentProps<typeof NewsClip>[] }[] = [
+const newsArticles: { articleType: string; articleList: NewsClipProps[] }[] = [
 	{
 		articleType: "News Outlets",
 		articleList: [
