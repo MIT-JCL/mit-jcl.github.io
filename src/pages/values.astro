@@ -1,4 +1,5 @@
 ---
+import FormattedDate from "@/components/FormattedDate";
 import PageLayout from "@/layouts/Base";
 
 const meta = {
@@ -10,9 +11,11 @@ const meta = {
 <PageLayout meta={meta}>
 	<div class="space-y-6">
 		<h1 class="title">Values and Mission</h1>
+		<em>Adopted <FormattedDate date={new Date("March 6, 2024")} /></em>
+		<!-- TODO: ADD ADOPTED DATE -->
 	</div>
 	<div
-		class="prose prose-sm max-w-[48rem] prose-cactus mt-12 prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-th:before:content-none"
+		class="prose prose-sm prose-cactus mt-12 max-w-[48rem] prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-th:before:content-none"
 	>
 		<h2>We build the Jewish community we envision at MIT</h2>
 		<p>
@@ -105,12 +108,26 @@ const meta = {
 			<dd>
 				Human Rights organizations on Israeli Apartheid
 				<ol>
-					<li>Adalah</li>
-					<li>Al-Haq</li>
-					<li>Amnesty International</li>
-					<li>Human Rights Watch</li>
-					<li>B'tselem</li>
-					<li>Harvard Human Rights Clinic</li>
+					<li><a href="https://www.adalah.org/en/content/view/10770">Adalah</a></li>
+					<li><a href="https://www.alhaq.org/advocacy/20931.html">Al-Haq</a></li>
+					<li>
+						<a href="https://www.amnesty.org/en/documents/mde15/5141/2022/en/"
+							>Amnesty International</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution"
+							>Human Rights Watch</a
+						>
+					</li>
+					<li><a href="https://www.btselem.org/apartheid">B'tselem</a></li>
+					<li>
+						<a
+							href="https://hrp.law.harvard.edu/wp-content/uploads/2022/03/IHRC-Addameer-Submission-to-HRC-COI-Apartheid-in-WB.pdf"
+							>Harvard Human Rights Clinic</a
+						>
+					</li>
 				</ol>
 			</dd>
 			<dt>Genocide</dt>
@@ -144,61 +161,73 @@ const meta = {
 					<li>
 						<em>The Colors of Jews</em> by Melanie Kaye/Kantrowitz <a
 							href="https://www.jewishvoiceforpeace.org/resource/zionism/"
-							>https://www.jewishvoiceforpeace.org/resource/zionism/</a>
+							>https://www.jewishvoiceforpeace.org/resource/zionism/</a
+						>
 					</li>
 					<li>
 						<a
 							href="https://www.jewishvoiceforpeace.org/2019/01/12/a-partial-history-of-jewish-alternatives/"
-							>https://www.jewishvoiceforpeace.org/2019/01/12/a-partial-history-of-jewish-alternatives/</a>
+							>https://www.jewishvoiceforpeace.org/2019/01/12/a-partial-history-of-jewish-alternatives/</a
+						>
 					</li>
 					<li>
 						<a href="https://www.thenation.com/article/world/antisemitism-palestine-israel-gaza/"
-							>https://www.thenation.com/article/world/antisemitism-palestine-israel-gaza/</a>
+							>https://www.thenation.com/article/world/antisemitism-palestine-israel-gaza/</a
+						>
 					</li>
 					<li>
 						<a href="https://jwa.org/encyclopedia/article/kaye-kantrowitz-melanie"
-							>https://jwa.org/encyclopedia/article/kaye-kantrowitz-melanie</a>
+							>https://jwa.org/encyclopedia/article/kaye-kantrowitz-melanie</a
+						>
 					</li>
 					<li>
 						<a href="https://jewishcurrents.org/on-an-emerging-diasporism"
-							>Jacob Plitman, On an Emerging Diasporism</a>
+							>Jacob Plitman, On an Emerging Diasporism</a
+						>
 					</li>
 					<li>
 						<a href="https://www.aprilrosenblum.com/world">https://www.aprilrosenblum.com/world</a>
 					</li>
 					<li>
 						<a href="https://journals.sagepub.com/doi/10.1177/0032329221999906"
-							>https://journals.sagepub.com/doi/10.1177/0032329221999906</a>
+							>https://journals.sagepub.com/doi/10.1177/0032329221999906</a
+						>
 					</li>
 					<li><a href="https://jerusalemdeclaration.org/">https://jerusalemdeclaration.org/</a></li>
 					<li>
 						<a
 							href="https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-prevention-and-punishment-crime-genocide"
-							>https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-prevention-and-punishment-crime-genocide</a>
+							>https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-prevention-and-punishment-crime-genocide</a
+						>
 					</li>
 					<li>
 						<a
 							href="https://www.hrw.org/news/2021/07/19/israeli-apartheid-threshold-crossedhttps://www.adalah.org/en/content/view/10770"
-							>https://www.hrw.org/news/2021/07/19/israeli-apartheid-threshold-crossedhttps://www.adalah.org/en/content/view/10770</a>
+							>https://www.hrw.org/news/2021/07/19/israeli-apartheid-threshold-crossedhttps://www.adalah.org/en/content/view/10770</a
+						>
 					</li>
 					<li>
 						<a href="https://www.alhaq.org/advocacy/20931.html"
-							>https://www.alhaq.org/advocacy/20931.html</a>
+							>https://www.alhaq.org/advocacy/20931.html</a
+						>
 					</li>
 					<li>
 						<a
 							href="https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution"
-							>https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution</a>
+							>https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution</a
+						>
 					</li>
 					<li><a href="https://www.btselem.org/apartheid">https://www.btselem.org/apartheid</a></li>
 					<li>
 						<a
 							href="https://hrp.law.harvard.edu/wp-content/uploads/2022/03/IHRC-Addameer-Submission-to-HRC-COI-Apartheid-in-WB.pdf"
-							>https://hrp.law.harvard.edu/wp-content/uploads/2022/03/IHRC-Addameer-Submission-to-HRC-COI-Apartheid-in-WB.pdf</a>
+							>https://hrp.law.harvard.edu/wp-content/uploads/2022/03/IHRC-Addameer-Submission-to-HRC-COI-Apartheid-in-WB.pdf</a
+						>
 					</li>
 					<li>
 						<a href="https://www.amnesty.org/en/documents/mde15/5141/2022/en/"
-							>https://www.amnesty.org/en/documents/mde15/5141/2022/en/</a>
+							>https://www.amnesty.org/en/documents/mde15/5141/2022/en/</a
+						>
 					</li>
 				</ul>
 			</dd>
