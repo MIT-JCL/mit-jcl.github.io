@@ -1,6 +1,6 @@
 ---
 title: "Statement on Protests"
-description: "A statement regarding protests on May 3rd"
+description: "A statement regarding the protests occuring at MIT on May 6th"
 publishDate: "6 May 2024"
 tags: ["statement", "response", "protests"]
 draft: false
