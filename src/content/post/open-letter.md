@@ -1,7 +1,7 @@
 ---
 title: "Open Letter"
 description: "A letter sent out via dormspam titled 'MIT, please listen to your Jewish students'"
-publishDate: "03 Mar 2024"
+publishDate: "18 Mar 2024"
 tags: ["statement", "open-letter"]
 draft: false
 ---
@@ -47,5 +47,5 @@ As we continue to build and heal our community, we ask you, reader of this repor
 While we have tried to work in good faith with administration, it is upsetting and frustrating to experience months of run-arounds, dead ends, and empty words. We want the administration to show us that they take our concerns seriously. Is MIT ready to support its broad and diverse Jewish student base, not just with words exchanged in closed-door meetings, but in meaningful campus action?
 
 MIT J4C
-
+\
 March 18, 2024

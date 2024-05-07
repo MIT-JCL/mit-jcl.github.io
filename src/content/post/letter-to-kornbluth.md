@@ -31,5 +31,5 @@ MITIA is now attempting to spin the protest to suit their own narrative—that o
 We are eager to engage in future conversations about the definition of antisemitism. We understand that MITIA has requested the adoption of the IHRA definition on campus. This definition would equate the criticism of Israeli apartheid and advocacy for Palestinian rights with hateful acts against Jews. _This absolutely must not stand._ Such a view of antisemitism cheapens the term when used to describe other, very real and dangerous instances of discrimination. By using verbal and physical threats and propagating lies, MITIA has repeatedly acted against our Jewish values. We look forward to being a part of ongoing conversations about decisions related to Jews, Jewish safety, and antisemitism on campus.
 
 MIT Jews for Ceasefire
-
+\
 November 14, 2023

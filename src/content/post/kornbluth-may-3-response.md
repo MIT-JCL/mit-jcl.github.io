@@ -19,5 +19,5 @@ You charitably refer to a foreign consulate-sponsored rally as being “in suppo
 As you urge us to be thoughtful about ending the encampment, we urge you to be thoughtful about how you represent us, the Scientists Against Genocide encampment, and other campus events in your statements. Stop perpetuating the false narrative that this is a Jewish vs Palestinian/Arab/Muslim issue. It is an issue of supporting or opposing a government that is actively committing genocide and is guilty of countless violations of international human rights law in Palestine and the broader region.
 
 We will camp until divestment.
-
+\
 MIT Jews for Ceasefire

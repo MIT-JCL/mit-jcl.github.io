@@ -13,5 +13,5 @@ MIT Jews for Ceasefire stand firm in our belief that airing this film is an atte
 Our Jewish values compel us to speak up against these abhorrent injustices. We will not let our grief as Jews be weaponized to justify the genocide in Gaza, and we condemn any propaganda that attempts to do so.
 
 MIT Jews for Ceasefire
-
+\
 December 20, 2023

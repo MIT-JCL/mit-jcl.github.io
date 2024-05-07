@@ -15,5 +15,5 @@ As Jewish MIT students, staff, and faculty, we find the involvement of the Israe
 The emergency created by the Israeli government's actions is far greater than any temporary inconvenience of a protest. We hope that you join us in calling MIT leadership to do what it easily did, just days after Russia's invasion of Ukraine: to immediately cut research ties and divest from a government committing historic injustice upon a people. MIT can, and must, do better.
 
 MIT Jews for Ceasefire
-
+\
 May 6, 2024
