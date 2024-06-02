@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.0.5
     version: 4.0.5
   '@astrojs/sitemap':
-    specifier: 3.1.4
-    version: 3.1.4
+    specifier: 3.1.5
+    version: 3.1.5
   '@astrojs/tailwind':
     specifier: 5.1.0
     version: 5.1.0(astro@4.8.0)(tailwindcss@3.4.3)
@@ -284,8 +284,8 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/sitemap@3.1.4:
-    resolution: {integrity: sha512-po8CqDCK14O6phU1mB5C8SyVLyQEa+7pJM8oXxs1mVh8DgvxxaA5E7lak1vzOmBcyyyHBW32jakGqNYc66sBRw==}
+  /@astrojs/sitemap@3.1.5:
+    resolution: {integrity: sha512-GLdzJ01387Uzb8RKYpsYLlg/GzoPnGbmDeQNkarSE11i2+l9Qp8Nj/WoTEy9nkTS25fxxy0kxDfJmreeVleCqg==}
     dependencies:
       sitemap: 7.1.2
       stream-replace-string: 2.0.0
@@ -1853,7 +1853,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.13.0
     dev: false
 
   /@types/tar@6.1.13:
