@@ -18,8 +18,8 @@ dependencies:
     specifier: 5.1.0
     version: 5.1.0(astro@4.9.2)(tailwindcss@3.4.3)
   '@iconify-json/tabler':
-    specifier: ^1.1.113
-    version: 1.1.113
+    specifier: ^1.1.114
+    version: 1.1.114
   astro:
     specifier: 4.9.2
     version: 4.9.2(typescript@5.4.5)
@@ -1070,8 +1070,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
 
-  /@iconify-json/tabler@1.1.113:
-    resolution: {integrity: sha512-dT34D0gyqxgK2t91+8scQ+U387yZ/zb4r7/3CHqhmvaVMsnOT8DFtX0FhJzdr6ldnVH82pGAp59GGr97IT/UfQ==}
+  /@iconify-json/tabler@1.1.114:
+    resolution: {integrity: sha512-AaTTGEyiPQ7VAYyXGQ9jUI8+8iL6xanucYsACz6f3U6JLph6jDyicXXUh+dYM6HxW6TGehwVqRO2NSIQpACszw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
