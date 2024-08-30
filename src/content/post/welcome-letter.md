@@ -43,6 +43,7 @@ MIT Global Indigenous Students for Justice (MIT IS4J) <br/>
 MIT Grads for Palestine (MIT G4P) <br/>
 MIT Reading for Revolution (R4R) <br/>
 MIT Taara <br/>
+Palestine@MIT<br/>
 Written Revolution
 
 <p id="footnote-1">[1] You may know us as Jews for Ceasefire (J4C)—we recently changed our name to Jews for Collective Liberation to reflect the scope of our goals.</p>
