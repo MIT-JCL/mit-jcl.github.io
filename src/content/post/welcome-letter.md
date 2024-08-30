@@ -1,5 +1,5 @@
 ---
-title: "Welcome! from JCL & the Coalition for Palestine"
+title: "Welcome! from JCL and the Coalition for Palestine"
 description: "A statement correcting the record about activism and antisemitism on campus"
 publishDate: "30 Aug 2024"
 tags: ["statement", "welcome"]
