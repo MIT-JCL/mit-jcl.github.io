@@ -11,7 +11,7 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
-	site: "https://mit-j4c.github.io/",
+	site: "https://mit-jcl.github.io/",
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
 		rehypePlugins: [
