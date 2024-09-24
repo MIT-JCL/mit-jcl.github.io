@@ -24,8 +24,9 @@ Instead of actually engaging with MIT community members, we have learned that MI
 **_MIT cannot stand against prejudice without standing against genocide_**
 
 President Kornbluth says MIT wants students to “feel at home.” We, as scientists of conscience, do not feel at home at MIT when the Institute continues to conduct research that supports the genocidal Israeli regime in ethnically cleansing Gaza.
-We encourage you to read communications from the Institute critically. The Coalition for Palestine rises from a strong tradition of anti-US-war-machine[^2] and anti-apartheid student actions at MIT[^3], and we will continue to fight against MIT’s complicity in the genocide in Palestine. As long as MIT profits off of racist, ethno-nationalist, genocidal projects, we will continue to fight for our Institute that “works for the betterment of humankind.”
-If you want to learn more, please reach out.[^4]
+We encourage you to read communications from the Institute critically. The Coalition for Palestine rises from a strong tradition of anti-US-war-machine[^2] and anti-apartheid[^3] student actions at MIT, and we will continue to fight against MIT’s complicity in the genocide in Palestine. As long as MIT profits off of racist, ethno-nationalist, genocidal projects, we will continue to fight for our Institute that “works for the betterment of humankind.”[^4]
+
+If you want to learn more, please reach out.
 
 Toward collective liberation,
 
