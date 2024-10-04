@@ -21,8 +21,8 @@ importers:
         specifier: 5.1.1
         version: 5.1.1(astro@4.15.8(@types/node@20.13.0)(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.13)
       '@iconify-json/tabler':
-        specifier: ^1.2.3
-        version: 1.2.3
+        specifier: ^1.2.4
+        version: 1.2.4
       astro:
         specifier: 4.15.8
         version: 4.15.8(@types/node@20.13.0)(rollup@4.21.2)(typescript@5.6.2)
@@ -492,8 +492,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@iconify-json/tabler@1.2.3':
-    resolution: {integrity: sha512-km0P/1Gtp/bFhvBQQmDkMx3nNIkNmU57WCYl9b8Envl81m3bhVVT85A8FtWChQxMXsYv3cTNuwMq/WZGfcY9vQ==}
+  '@iconify-json/tabler@1.2.4':
+    resolution: {integrity: sha512-8sUrdJQpNaX3ZfJ5Po4hhA6n+JougMZeRg3AFvh5OuAvhZ8hEAOzPHuY8OB96x6cZCqY/j5idsbZWqKDinxRbQ==}
 
   '@iconify/tools@4.0.6':
     resolution: {integrity: sha512-riEQggXVuZNXjRdo+aKT0rkzn2XHslIqat8mdW/oVu5mLmP/95Hi+iaq4keT7WwMD97jsYPXMQ6QMCw0EWpRNw==}
@@ -4298,7 +4298,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@iconify-json/tabler@1.2.3':
+  '@iconify-json/tabler@1.2.4':
     dependencies:
       '@iconify/types': 2.0.0
 
