@@ -1,5 +1,4 @@
-import type { APIContext, GetStaticPaths } from "astro";
-import { getEntryBySlug } from "astro:content";
+import type { APIContext, InferGetStaticPropsType } from "astro";
 import satori, { type SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
@@ -30,12 +29,12 @@ const ogOptions: SatoriOptions = {
 };
 
 const markup = (title: string, pubDate: string) =>
-	html`<div tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]">
+	html`<div tw="flex flex-col w-full h-full bg-[#121212] text-[#ededed]">
 		<div tw="flex flex-col flex-1 w-full p-10 justify-center">
 			<p tw="text-2xl mb-6">${pubDate}</p>
 			<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
 		</div>
-		<div tw="flex items-center justify-between w-full p-10 border-t border-[#2bbc89] text-xl">
+		<div tw="flex items-center justify-between w-full p-10 border-t border-[#e45038] text-xl">
 			<div tw="flex items-center">
 				<!-- <svg height="60" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 480">
 					<path
@@ -58,16 +57,15 @@ const markup = (title: string, pubDate: string) =>
 		</div>
 	</div>`;
 
-export async function GET({ params: { slug } }: APIContext) {
-	const post = await getEntryBySlug("post", slug!);
-	const title = post?.data.title ?? siteConfig.title;
-	const postDate = getFormattedDate(
-		post?.data.updatedDate ?? post?.data.publishDate ?? Date.now(),
-		{
-			weekday: "long",
-			month: "long",
-		},
-	);
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+export async function GET(context: APIContext) {
+	const { pubDate, title } = context.props as Props;
+
+	const postDate = getFormattedDate(pubDate, {
+		month: "long",
+		weekday: "long",
+	});
 	const svg = await satori(markup(title, postDate), ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
@@ -78,7 +76,15 @@ export async function GET({ params: { slug } }: APIContext) {
 	});
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export async function getStaticPaths() {
 	const posts = await getAllPosts();
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
-};
+	return posts
+		.filter(({ data }) => !data.ogImage)
+		.map((post) => ({
+			params: { slug: post.slug },
+			props: {
+				pubDate: post.data.updatedDate ?? post.data.publishDate,
+				title: post.data.title,
+			},
+		}));
+}
