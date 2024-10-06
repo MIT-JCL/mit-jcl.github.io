@@ -6,21 +6,21 @@
 	:root {
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
-		--theme-bg: 0deg 0% 100%;
+		--theme-bg: 0deg 0% 93%;
 		--theme-link: 305deg 30% 85%;
-		--theme-text: 0deg 0% 11%;
+		--theme-text: 0deg 0% 7%;
 		--theme-accent: 8deg 81% 55%;
-		--theme-accent-2: 0deg 0% 0%;
+		--theme-accent-2: 0deg 0% 7%;
 		--theme-quote: 8deg 81% 55%;
 	}
 
 	:root.dark {
 		color-scheme: dark;
-		--theme-bg: 0deg 0% 11%;
+		--theme-bg: 0deg 0% 7%;
 		--theme-link: 305deg 30% 85%;
-		--theme-text: 0deg 0% 89%;
+		--theme-text: 0deg 0% 93%;
 		--theme-accent: 8deg 81% 55%;
-		--theme-accent-2: 0deg 0% 100%;
+		--theme-accent-2: 0deg 0% 93%;
 		--theme-quote: 8deg 81% 55%;
 	}
 
@@ -35,5 +35,5 @@
 
 ::selection {
 	background: hsl(305, 30%, 85%);
-	color: hsl(0, 0%, 11%);
+	color: hsl(0, 0%, 7%);
 }
