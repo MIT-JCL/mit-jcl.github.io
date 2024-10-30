@@ -1,6 +1,7 @@
 ---
-import PageLayout from "@/layouts/Base";
-import NewsClip from "@/components/NewsClip";
+// biome-ignore lint/style/useImportType: <explanation>
+import NewsClip from "@/components/NewsClip.astro";
+import PageLayout from "@/layouts/Base.astro";
 import type { ComponentProps } from "astro/types";
 
 const meta = {
@@ -67,13 +68,7 @@ const newsArticles: { articleType: string; articleList: ComponentProps<typeof Ne
 					<ul class="space-y-8">
 						{articleList.map((article) => (
 							<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
-								<NewsClip
-									link={article.link}
-									title={article.title}
-									description={article.description}
-									pubDate={article.pubDate}
-									journal={article.journal}
-								/>
+								<NewsClip {...article} />
 							</li>
 						))}
 					</ul>

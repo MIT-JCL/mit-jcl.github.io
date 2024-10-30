@@ -1,12 +1,11 @@
 ---
 import { Image } from "astro:assets";
-
-import PageLayout from "@/layouts/Base";
 import aboutImg from "@/assets/about-mitj4c.jpeg";
+import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	title: "Get Involved",
 	description: "Get Involved with MIT Jews for Collective Liberation",
+	title: "Get Involved",
 };
 ---
 
@@ -23,16 +22,12 @@ const meta = {
 			>, and an organizer will get in touch with you.
 		</p>
 		<div class="flex justify-center">
-			<a
-				href="https://docs.google.com/forms/d/e/1FAIpQLSewY_nGPgeWLQuGHPQI_3nxgR_O1fVQhRusCGbfuDFEgfdrrg/viewform?usp=sf_link"
-			>
-				<Image
-					src={aboutImg}
-					alt="JCL's first gathering in 2023."
-					loading="eager"
-					fetchpriority="high"
-				/>
-			</a>
+			<Image
+				src={aboutImg}
+				alt="JCL's first gathering in 2023."
+				loading="eager"
+				fetchpriority="high"
+			/>
 		</div>
 	</div>
 </PageLayout>

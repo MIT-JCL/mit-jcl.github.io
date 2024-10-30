@@ -1,6 +1,6 @@
 ---
-import FormattedDate from "@/components/FormattedDate";
-import PageLayout from "@/layouts/Base";
+import FormattedDate from "@/components/FormattedDate.astro";
+import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
 	title: "Values and Mission",
@@ -12,7 +12,6 @@ const meta = {
 	<div class="space-y-6">
 		<h1 class="title">Values and Mission</h1>
 		<em>Adopted <FormattedDate date={new Date("March 8, 2024")} /></em>
-		<!-- TODO: ADD ADOPTED DATE -->
 	</div>
 	<div
 		class="prose prose-sm prose-cactus mt-12 max-w-[48rem] prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-th:before:content-none"
