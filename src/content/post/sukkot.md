@@ -31,6 +31,10 @@ If you want to join us, [fill out our interest form](https://forms.gle/QZdykgMHN
 With hope,\
 MIT Jews for Collective Liberation
 
+![Jews for Palestine sukkah with "MIT Stop IOF Research" at the top](../../assets/posts/sukkot-1.jpeg)
+![Entrance to sukkah with "every life a universe" sign at the top](../../assets/posts/sukkot-2.jpeg)
+![Collection of students laying down at sukkah at night](../../assets/posts/sukkot-3.jpeg)
+
 [^1]: See Professor Eytan Modiano’s “Autonomous Robotic Swarms” and Professor Daniela Rus’s “Coreset Compression Algorithms” as two examples. The full list of projects as of last year can [be found here](https://docs.google.com/spreadsheets/d/1Q13sdsOQsxTtkqG-lebja5l-6-Oy8ERVhF1-JjOe8G8/edit?gid=0#gid=0).
 
 [^2]: Back in July, The Lancet (a peer-reviewed medical journal) published a conservative estimate of [186,000 dead](<https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext>).
