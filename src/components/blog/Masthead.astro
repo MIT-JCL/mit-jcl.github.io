@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import type { CollectionEntry } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 import { Icon } from "astro-icon/components";
 import FormattedDate from "../FormattedDate.astro";
 
@@ -8,11 +8,9 @@ interface Props {
 	content: CollectionEntry<"post">;
 }
 
-const {
-	content: { data, render },
-} = Astro.props;
+const { content } = Astro.props;
 
-const { remarkPluginFrontmatter } = await render();
+const { remarkPluginFrontmatter } = await render(content);
 
 const dateTimeOptions: Intl.DateTimeFormatOptions = {
 	month: "long",
@@ -20,42 +18,46 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 ---
 
 {
-	data.coverImage && (
+	content.data.coverImage && (
 		<div class="mb-6 aspect-[16/9]">
 			<Image
-				alt={data.coverImage.alt}
+				alt={content.data.coverImage.alt}
 				class="object-cover"
 				fetchpriority="high"
 				loading="eager"
-				src={data.coverImage.src}
+				src={content.data.coverImage.src}
 			/>
 		</div>
 	)
 }
-{data.draft ? <span class="text-base text-red-500">(Draft)</span> : null}
+{content.data.draft ? <span class="text-base text-red-500">(Draft)</span> : null}
 <h1 class="title">
-	{data.title}
+	{content.data.title}
 </h1>
 <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
 	<p class="font-semibold">
-		<FormattedDate date={data.publishDate} dateTimeOptions={dateTimeOptions} /> /{" "}
+		<FormattedDate date={content.data.publishDate} dateTimeOptions={dateTimeOptions} /> /{" "}
 		{remarkPluginFrontmatter.minutesRead}
 	</p>
 	{
-		data.updatedDate && (
+		content.data.updatedDate && (
 			<span class="rounded-lg bg-quote/10 px-2 py-1 text-quote">
 				Updated:
-				<FormattedDate class="ms-1" date={data.updatedDate} dateTimeOptions={dateTimeOptions} />
+				<FormattedDate
+					class="ms-1"
+					date={content.data.updatedDate}
+					dateTimeOptions={dateTimeOptions}
+				/>
 			</span>
 		)
 	}
 </div>
 {
-	!!data.tags?.length && (
+	!!content.data.tags?.length && (
 		<div class="mt-3">
 			<Icon name="tabler:tags" class="me-1 inline-block h-6 w-6" />
 
-			{data.tags.map((tag, i) => (
+			{content.data.tags.map((tag, i) => (
 				<>
 					<a
 						aria-label={`View more blogs with the tag ${tag}`}
@@ -65,7 +67,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 					>
 						{tag}
 					</a>
-					{i < data.tags.length - 1 && ", "}
+					{i < content.data.tags.length - 1 && ", "}
 				</>
 			))}
 		</div>

@@ -6,7 +6,7 @@ import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import { expressiveCodeOptions } from "./src/site.config";
 import { siteConfig } from "./src/site.config";
 
@@ -23,6 +23,7 @@ import rehypeUnwrapImages from "rehype-unwrap-images";
 export default defineConfig({
 	image: {
 		domains: ["webmention.io"],
+    service: passthroughImageService(), // temporary since sharp is not working :(
 	},
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
@@ -102,6 +103,13 @@ export default defineConfig({
 			exclude: ["@resvg/resvg-js"],
 		},
 		plugins: [rawFonts([".ttf", ".woff"])],
+    build: {
+      rollupOptions: {
+        external: [
+          "sharp"
+        ]
+      }
+    }
 	},
 });
 
