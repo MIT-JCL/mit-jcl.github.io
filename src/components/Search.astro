@@ -101,6 +101,7 @@ import { Icon } from "astro-icon/components";
 			if (import.meta.env.DEV) return;
 			const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
 			onIdle(async () => {
+				// @ts-expect-error there are no types but it works <3
 				const { PagefindUI } = await import("@pagefind/default-ui");
 				new PagefindUI({
 					baseUrl: import.meta.env.BASE_URL,
