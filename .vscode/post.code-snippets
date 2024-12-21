@@ -17,7 +17,7 @@
 	// }
 	"Add frontmatter to an Astro Cactus Post": {
 		"scope": "markdown,mdx",
-		"prefix": "frontmatter",
+		"prefix": "frontmatter-post",
 		"body": [
 			"---",
 			"title: ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}",
