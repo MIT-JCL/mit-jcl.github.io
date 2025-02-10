@@ -98,7 +98,7 @@ importers:
         version: 2.6.2
       '@tailwindcss/typography':
         specifier: ^0.5.16
-        version: 0.5.16(tailwindcss@4.0.2)
+        version: 0.5.16(tailwindcss@4.0.5)
       '@types/hast':
         specifier: ^3.0.4
         version: 3.0.4
@@ -124,8 +124,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
       tailwindcss:
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^4.0.5
+        version: 4.0.5
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -2854,6 +2854,9 @@ packages:
   tailwindcss@4.0.2:
     resolution: {integrity: sha512-cjWQjZEbzQNqH4IiSjRcYg96zjlu+rjzTFkqTc/fN3FNnIU4CoNlQvwCsIomwG/2EPWYT9ysFL1QF6Av3fZeNg==}
 
+  tailwindcss@4.0.5:
+    resolution: {integrity: sha512-DZZIKX3tA23LGTjHdnwlJOTxfICD1cPeykLLsYF1RQBI9QsCR3i0szohJfJDVjr6aNRAIio5WVO7FGB77fRHwg==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -4001,13 +4004,13 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.2
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.2
 
-  '@tailwindcss/typography@0.5.16(tailwindcss@4.0.2)':
+  '@tailwindcss/typography@0.5.16(tailwindcss@4.0.5)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 4.0.2
+      tailwindcss: 4.0.5
 
   '@tailwindcss/vite@4.0.2(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
@@ -6586,6 +6589,8 @@ snapshots:
       picocolors: 1.1.1
 
   tailwindcss@4.0.2: {}
+
+  tailwindcss@4.0.5: {}
 
   tapable@2.2.1: {}
 
