@@ -2,14 +2,15 @@
 title: "MIT JCL Response to the JAA Letter"
 description: "We, the Jewish students, staff, faculty, and alumni who are not represented by the so-called “MIT Jewish Alumni Alliance” (JAA), are writing to you to contest the recent open letter purporting to speak for all Jewish MIT alumni. This letter contains absurd and insidious fallacies. We address these below."
 publishDate: "21 Mar 2025"
-tags: ["statement"]
+tags: ["statement", "response", "open-letter"]
 draft: false
 ---
+
 Dear President Kornbluth,
 
 We, the Jewish students, staff, faculty, and alumni who are not represented by the so-called “MIT Jewish Alumni Alliance” (JAA), are writing to you to contest the recent open letter purporting to speak for all Jewish MIT alumni. This letter contains absurd and insidious fallacies. We address these below.
 
-But first, some necessary context setting:    
+But first, some necessary context setting:
 
 1. We are writing this letter two days after Israel broke its ceasefire agreement by commencing a brutal bombing campaign — dropping bombs onto a starving people (starving, because Israel has illegally imposed a blockade on food and aid, in direct defiance of the agreement). Israel mercilessly slaughtered [over four hundred](https://apnews.com/live/latest-updates-israel-launches-new-wave-of-airstrikes-across-gaza-after-ceasefire-talks-stall) people in one night. Many of those killed were children (Israel’s most [popular](https://www.israelhayom.co.il/culture/tv/article/15043007) news channel labeled them “[operatives](https://x.com/ireallyhateyou/status/1902045105155948600#m)”).
 
@@ -33,7 +34,7 @@ What does it mean for the MIT administration to stand up for what is right? It m
 
 We urge the JAA and future government spooks sweatily combing through our emails to consider rethinking this false binary of “us” or “them,” Jews vs Palestinians: antisemitism rises WITH anti-Palestinian hate, it rises WITH Islamophobia. In the [words](https://zeteo.com/p/i-am-jewish-student-columbia-mahmoud-khalil-protests-ice-trump) of Mahmoud Khalil – a Palestinian refugee, activist, and legal green card holder who has [detailed his unconscionable detention by ICE](https://archive.ph/fre9C) since March 8th – “The liberation of the Palestinian people and the Jewish people are intertwined and go hand-by-hand, and you cannot achieve one without the other.”
 
-As a genocide is being waged to ensure a Zionist, Jewish ethnostate in perpetuity, we urge the readers of this letter to ask, is banning uncomfortable words and phrases the solution to hate?  How many students must be suspended, expelled, arrested, deported, in the name of Jewish “safety”? How many bombs must fall, how many children must be murdered? Where is your limit?\! 
+As a genocide is being waged to ensure a Zionist, Jewish ethnostate in perpetuity, we urge the readers of this letter to ask, is banning uncomfortable words and phrases the solution to hate?  How many students must be suspended, expelled, arrested, deported, in the name of Jewish “safety”? How many bombs must fall, how many children must be murdered? Where is your limit?\!
 
 To Jews of conscience in the MIT community: we welcome you to [join us](https://docs.google.com/forms/d/e/1FAIpQLSewY_nGPgeWLQuGHPQI_3nxgR_O1fVQhRusCGbfuDFEgfdrrg/viewform).
 
